@@ -1,0 +1,713 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/***********************************************************************/
+/* VAVBAR SECTION                                    */
+/***********************************************************************/
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(73, 73, 99);
+    color: white;
+    padding: 1em;
+}
+
+.logo {
+    position: absolute;
+    left: 30%;
+}
+
+.moon-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Makes the container circular */
+}
+
+.float-logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.moon {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: greenyellow;
+    /* Light gray color for the illuminated part of the moon */
+}
+
+.shadow {
+    position: absolute;
+    color: antiquewhite;
+    top: 0;
+    left: 0;
+    /* Position the shadow to the left side */
+    width: 92%;
+    /* Adjust the width for the thin crescent effect */
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(73, 73, 99);
+    /* Dark color for the shadow */
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center text horizontally and vertically */
+    font-size: 24px;
+    color: greenyellow;
+    /* White color for the text */
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/***********************************************************************/
+/* COMMON STYLE FOR ALL SECTIONS                                       */
+/***********************************************************************/
+
+.section {
+    padding: 50px;
+    text-align: center;
+    height: auto;
+}
+
+/***********************************************************************/
+/* HOME SECTION                                                        */
+/***********************************************************************/
+
+/* .section-home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url('home-image.png') no-repeat center center fixed;
+    height: 130vh;
+    padding: 50px;
+    color: white;
+    /* Change text color for better contrast */
+/* background-color: rgba(6, 30, 53, 0.5); */
+/* overflow: hidden; */
+
+.section-home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url('home-image15.png') no-repeat center center fixed;
+    height: 130vh;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    /* Ensure the body stays behind all elements */
+    margin: auto;
+    padding: auto;
+
+}
+
+.home {
+    color: greenyellow;
+}
+
+.name {
+    font-size: 60px;
+    text-align: left;
+    margin-left: 500px;
+    margin-top: -250px;
+}
+
+h2.sub-title {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 500px;
+    color: white;
+}
+
+.prime {
+    color: greenyellow;
+}
+
+.dot {
+    color: greenyellow;
+}
+
+/***********************************************************************/
+/* SKILLS SECTION                                                      */
+/***********************************************************************/
+
+.section-skills {
+    padding-top: 450px;
+    padding-bottom: 200px;
+    background: url('bkg-image7.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    /* Ensure the body stays behind all elements */
+    margin: auto;
+}
+
+.skills-container {
+    width: 70%;
+    margin: 70px auto;
+}
+
+.profes,
+.profes-sub-title {
+    width: max-content;
+    /* Ensures both elements take up only necessary space */
+    margin: 20px auto;
+    /* Centers them */
+}
+
+.profes {
+    font-size: 50px;
+    color: white;
+    /* text-shadow: 2px 2px 4px black; */
+    letter-spacing: 3px;
+    margin-top: 50px;
+}
+
+.profes-sub-title {
+    font-size: 22px;
+    color: white;
+    /* text-shadow: 2px 2px 4px black; */
+    text-align: center;
+    /* Centers text */
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.skill-name {
+    width: 150px;
+    /* Ensure all skill names take up the same space */
+    font-weight: bold;
+    margin-right: 10px;
+    color: white;
+    text-align: left;
+    /* Aligns text left */
+    flex-shrink: 0;
+    /* Prevents shrinking */
+    letter-spacing: 3px;
+    /* text-shadow: 2px 2px 4px black; */
+}
+
+.bar {
+    background-color: yellowgreen;
+    padding: 5px;
+    text-align: center;
+    border-radius: 0;
+    /* Example width - each bar has its own percentage */
+}
+
+.percentPHYTON {
+    position: absolute;
+    left: calc(85% - 120px);
+    /* Adjusting space slightly after the bar */
+    font-weight: bold;
+    white-space: nowrap;
+    /* Prevents line breaks */
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.percentJAVASCRIPT {
+    position: absolute;
+    left: calc(75% + 60px);
+    /* Adjusting space slightly after the bar */
+    font-weight: bold;
+    white-space: nowrap;
+    /* Prevents line breaks */
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.percentHTMLCSS {
+    position: absolute;
+    left: calc(70% + 90px);
+    /* Adjusting space slightly after the bar */
+    font-weight: bold;
+    white-space: nowrap;
+    /* Prevents line breaks */
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.percentJAVA {
+    position: absolute;
+    left: calc(75% + 60px);
+    /* Adjusting space slightly after the bar */
+    font-weight: bold;
+    white-space: nowrap;
+    /* Prevents line breaks */
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.percentMYSQL {
+    position: absolute;
+    left: calc(80% + 40px);
+    /* Adjusting space slightly after the bar */
+    font-weight: bold;
+    white-space: nowrap;
+    /* Prevents line breaks */
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.percentDJANGO {
+    position: absolute;
+    left: calc(60% + 50px);
+    /* Adjusting space slightly after the bar */
+    font-weight: bold;
+    white-space: nowrap;
+    /* Prevents line breaks */
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+/***********************************************************************/
+/* PORTFOLIO AND EXPERIENCE SECTION                                    */
+/***********************************************************************/
+
+.section-portfolio {
+    padding-top: 40px;
+    background: url('bkg-image9.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    height: 350vh;
+}
+
+.project-container {
+    display: flex;
+    align-items: center;
+    /* Vertically align items */
+    justify-content: center;
+    /* Horizontally center content */
+    flex-wrap: wrap;
+    /* Ensures responsiveness */
+    max-width: 80%;
+    margin: 0 auto;
+    /* Centers horizontally */
+    padding: 20px;
+}
+
+.project-text {
+    flex: 1;
+    width: 50%;
+    /* Ensures text takes half the width */
+    text-align: left;
+    padding-right: 200px;
+    color: white;
+}
+
+.project-text h2 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.project-text p a {
+    color: greenyellow;
+}
+
+.project-image {
+    flex: 1;
+    width: 50%;
+    /* Ensures image takes half the width */
+    display: flex;
+    justify-content: center;
+    /* Centers image inside its container */
+}
+
+.project-image img {
+    max-width: 100%;
+    /* Ensures image scales properly */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+/* EXPERIENCE SECTION */
+
+h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.event h2 {
+    color: greenyellow;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #00ff00;
+    transform: translateX(-50%);
+}
+
+.event {
+    width: 45%;
+    padding: 20px;
+    position: relative;
+    margin: 20px 0;
+    border-radius: 5px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.event.left {
+    text-align: right;
+    align-self: flex-start;
+    align-items: flex-end;
+}
+
+.event.right {
+    text-align: left;
+    align-self: flex-end;
+    align-items: flex-start;
+}
+
+.event::after {
+    content: "";
+    position: absolute;
+    top: 18%;
+    transform: translateY(-10%);
+    width: 12px;
+    height: 12px;
+    background: #00ff00;
+    border-radius: 50%;
+}
+
+.event.left::after {
+    right: -38px;
+}
+
+.event.right::after {
+    left: -38px;
+}
+
+/***********************************************************************/
+/* CONTACT SECTION                                                     */
+/***********************************************************************/
+
+.section-contact {
+    padding-top: 400px;
+    background: url('bkg-image10.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    /* Ensure the body stays behind all elements */
+    margin: auto;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Aligns elements at the top */
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-info {
+    width: 40%;
+    text-align: left;
+    padding-right: 100px;
+}
+
+.contact-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    /* Ensures label is above input */
+    flex: 1;
+    /* Makes both fields equal width */
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    background-color: #00c853;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #009624;
+}
+
+/***********************************************************************/
+/* FOR FLOATING BOXES                                                  */
+/***********************************************************************/
+
+/* float box 1 */
+.float-box {
+    position: absolute;
+    top: 160vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(73, 73, 99);
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 90vh;
+    color: aqua;
+}
+
+.float-box p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: justify;
+    line-height: 30px;
+    margin: 20px auto 20px auto;
+}
+
+.btn {
+    background: none;
+    /* Removes background color */
+    border: 2px solid greenyellow;
+    /* Sets border color (change as needed) */
+    color: white;
+    /* Text color matching border */
+    padding: 10px 20px;
+    transition: 0.3s;
+    /* Smooth hover effect */
+    font-size: 18px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: goldenrod;
+    /* Add background color on hover */
+    color: white;
+    /* Change text color */
+}
+
+/* float box 2 */
+
+.float-box2 {
+    position: absolute;
+    top: 670vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(73, 73, 99);
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 500px;
+    width: 50%;
+    color: aqua;
+}
+
+.moon-container-box {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    left: 45%;
+    /* Makes the container circular */
+}
+
+.moon-box {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: greenyellow;
+    /* Light gray color for the illuminated part of the moon */
+}
+
+.shadow-box {
+    position: absolute;
+    color: antiquewhite;
+    top: 0;
+    left: 0;
+    /* Position the shadow to the left side */
+    width: 92%;
+    /* Adjust the width for the thin crescent effect */
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(73, 73, 99);
+    /* Dark color for the shadow */
+}
+
+.shadow-box .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center text horizontally and vertically */
+    font-size: 40px;
+    color: greenyellow;
+    /* White color for the text */
+    font-family: Arial, sans-serif;
+}
+
+/***********************************************************************/
+/* FOOTER SECTION                                                      */
+/***********************************************************************/
+
+.footer {
+    background-color: rgb(73, 73, 99);
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* Center both items */
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+}
+
+.moon-container-footer {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Makes the container circular */
+}
+
+.moon-footer {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: greenyellow;
+    /* Light gray color for the illuminated part of the moon */
+}
+
+.shadow-footer {
+    position: absolute;
+    color: antiquewhite;
+    top: 0;
+    left: 0;
+    /* Position the shadow to the left side */
+    width: 92%;
+    /* Adjust the width for the thin crescent effect */
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(73, 73, 99);
+    /* Dark color for the shadow */
+}
+
+.text-footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Center text horizontally and vertically */
+    font-size: 24px;
+    color: greenyellow;
+    /* White color for the text */
+    font-family: Arial, sans-serif;
+}
+
+.copyright {
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 120px;
+}
+
+.copyright p {
+    margin: 0;
+    text-align: right;
+}

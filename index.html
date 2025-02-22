@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kun Ratha KEAN - Portfolio</title>
+    <link rel="stylesheet" href="style4.css">
+    <script defer src="script4.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <div class="moon-container">
+                <div class="moon"></div>
+                <div class="shadow">
+                    <div class="text">K</div> <!-- Text inside the shadow -->
+                </div> <!-- Shadow creates the thin crescent effect -->
+            </div>
+        </div>
+        <ul>
+            <li><a href="#home"><span class="home">HOME</span></a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="section section-home">
+        <div class="intro">
+            <h1 class="name">I <span class="prime">'</span> M <br> KUN RATHA <br> KEAN <span class="dot">.</span></h1>
+            <h2 class="sub-title">PhD IN PHYSICS AND WISHES TO <br> SWITCH TO WEB DEVELOPMENT.</h2>
+        </div>
+        <!-- <div class="profile-pic">
+            <img src="ratha.jpg" alt="Kun Ratha KEAN">
+        </div> -->
+    </section>
+
+    <div class="float-box">
+        <div class="float-logo">
+            <div class="moon-container-box">
+                <div class="moon-box"></div>
+                <div class="shadow-box">
+                    <div class="text">K</div> <!-- Text inside the shadow -->
+                </div> <!-- Shadow creates the thin crescent effect -->
+            </div>
+        </div>
+        <p>I hold a doctor in nuclear physics and began my career as a high school
+            physics teacher after earning my
+            bachelor’s degree. Following my master’s in nuclear physics, I transitioned to teaching physics at the
+            university level. Driven by my passion for scientific research, I pursued a doctor in nuclear physics in
+            Japan,
+            followed by a postdoctoral fellow at the SUBATECH laboratory (CNRS) in France.
+
+            Now, with a strong interest in data and web development, I am looking to transition my career into web
+            development, particularly in building data-driven applications..</p>
+        <a href="cv.pdf" download target="_blank">
+            <button class="btn"><span>DOWNLOAD RESUME</span></button>
+        </a>
+
+    </div>
+
+    <section id="skills" class="section section-skills">
+        <h2 class="profes">01 SKILLS</h2>
+        <h3 class="profes-sub-title">MY KNOWLEDGE LEVEL IN SOFTWARE</h3>
+        <div class="skills-container">
+            <div class="skill"><span class="skill-name">PYTHON</span>
+                <div class="progress">
+                    <div class="bar" style="width: 85%"></div>
+                    <span class="percentPHYTON">85%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="progress">
+                    <span class="skill-name">JAVASCRIPT</span>
+                    <div class="bar" style="width: 75%"></div>
+                    <span class="percentJAVASCRIPT">75%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="progress">
+                    <span class="skill-name">HTML & CSS</span>
+                    <div class="bar" style="width: 70%"></div>
+                    <span class="percentHTMLCSS">70%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="progress">
+                    <span class="skill-name">JAVA</span>
+                    <div class="bar" style="width: 75%"></div>
+                    <span class="percentJAVA">75%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="progress">
+                    <span class="skill-name">MYSQL</span>
+                    <div class="bar" style="width: 80%"></div>
+                    <span class="percentMYSQL">80%</span>
+                </div>
+            </div>
+            <div class="skill"><span class="skill-name">DJANGO</span>
+                <div class="progress">
+                    <div class="bar" style="width: 60%"></div>
+                    <span class="percentDJANGO">60%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section section-portfolio">
+        <h1>02 Portfolio</h1>
+        <div class="project-container">
+            <div class="project-text">
+                <h2>Movie Recommendation System with Streamlit</h2>
+                <p>This project is a web-based movie recommendation application built with Streamlit. The app allows
+                    users to select a movie and receive recommendations based on similarity using K-Nearest
+                    Neighbors
+                    (KNN) and TF-IDF vectorization.</p>
+                <p>Additionally, the app integrates The Movie Database (TMDb) API to fetch movie details, posters,
+                    and
+                    more.</p>
+                <p><a href="https://film-recommendation-ml-app.streamlit.app" target="_blank">Live Demo</a> | <a
+                        href="https://github.com/kunratha/film_recommendation_ML_Streamlit" target="_blank">GitHub</a>
+                </p>
+            </div>
+            <div class="project-image">
+                <img src="film_recommendation.png" alt="Project Screenshot">
+            </div>
+        </div>
+
+        <div class="project-container">
+            <div class="project-text">
+                <h2>Breast Cancer Prediction with ML and Django</h2>
+                <p>This project is a breast cancer prediction system developed using Machine Learning and Django.
+                    The system leverages a trained machine learning model to predict whether a tumor is malignant or
+                    benign, based on medical features such as radius, texture, and smoothness of the tumor, etc. It
+                    provides an intuitive web interface where users can input features and receive a prediction.</p>
+                <p><a href="https://github.com/kunratha/breast_cancer_prediction_ML_Django" target="_blank">GitHub</a>
+                </p>
+            </div>
+            <div class="project-image">
+                <img src="breast_cancer_prediction_ML2.png" alt="Project Screenshot">
+            </div>
+        </div>
+
+        <div class="project-container">
+            <div class="project-text">
+                <h2>Bicycle Market Analytics Dashboard</h2>
+                <p>This project is a Bicycle Market Analytics Dashboard developed with Streamlit and Plotly to visualize
+                    key insights into bicycle sales data. The dashboard allows users to explore various metrics such as
+                    total revenue, units sold, and profit margins, and provides dynamic data visualizations through pie
+                    charts, line charts, and KPIs (Key Performance Indicators). It also includes filters for customizing
+                    the displayed data.</p>
+                <p><a href="https://bicycle-market-study-dashboard.streamlit.app" target="_blank">Live Demo</a> | <a
+                        href="https://github.com/kunratha/bicycle_market_study_streamlit" target="_blank">GitHub</a>
+                </p>
+            </div>
+            <div class="project-image">
+                <img src="bycicle_market.png" alt="Project Screenshot">
+            </div>
+        </div>
+
+        <h1>03 Experience</h1>
+        <div class="timeline">
+            <div class="event left">
+                <h2>2020 - 2021</h2>
+                <h3>SUBATECH LABORATORY (CNRS)</h3>
+                <h4 style="font-weight: bold;">Nuclear physics researcher</h4>
+                <p> As an
+                    experimental nuclear physicist, I developed codes
+                    and simulations for data analysis, primarily
+                    using C++ for data processing and analysis.</p>
+            </div>
+            <div class="event right">
+                <h2>2011 - 2016</h2>
+                <h3>INSTITUTE OF TECHNOLOGY OF CAMBODIA, ...</h3>
+                <h4 style="font-weight: bold;">University lecturer</h4>
+                <p>I taught physics to first- and second-year students in engineering schools in Cambodia.</p>
+            </div>
+            <div class="event left">
+                <h2>2004 - 2009</h2>
+                <h3>HIGH SCHOOL IN CAMBODIA</h3>
+                <h4 style="font-weight: bold;">Physics teacher</h4>
+                <p>I taught physics in high schools in bilingual classes (Khmer-French) in Cambodia.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="float-box2">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>CONTACT</h2>
+                <p>Interested in working together or have any questions? Feel free to contact me! I'm always open to new
+                    opportunities and collaborations.</p>
+                <p><strong>kean.kun.ratha2020@gmail.com</strong></p>
+                <p>Tel: +33 6 83 01 34 12</p>
+            </div>
+
+            <div class="contact-form">
+                <form id="contact-form" action="https://formspree.io/f/xbldqeaj" method="POST" accept-charset="UTF-8">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="first-name">First name *</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="last-name">Last name *</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder=""></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+                <div id="form-message"></div>
+            </div>
+
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-tumblr"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+
+    <section id="contact" class="section section-contact">
+
+    </section>
+
+    <footer class="footer">
+        <div class="logo-footer">
+            <div class="moon-container-footer">
+                <div class="moon-footer"></div>
+                <div class="shadow">
+                    <div class="text-footer">K</div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 by Kun Ratha KEAN. Powered and secured by</p>
+        </div>
+    </footer>
+</body>
+
+</html>
